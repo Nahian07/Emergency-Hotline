@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <header>
+        <nav class="flex justify-between max-w-[1600px] m-auto mt-5 items-center">
+            <div class="flex">
+                <img src="./assets/logo.png" alt="" class="w-[50px] h-[50px] mr-2">
+                <h2 class="font-extrabold leading-tight text-[#006747] text-lg">Emergency <br> Service</h2>
+            </div>
+            <div class="flex gap-5">
+                <div class="flex gap-2 bg-[rgba(65,255,107,0.1)] px-4 py-1.5 rounded-2xl">
+                    <p class="font-extrabold">0</p>
+                    <img src="./assets/heart.png" alt="" class="w-[25.79px] h-[22.99px]">
+                </div>
+                <div class="flex gap-2 bg-[rgba(65,255,107,0.1)] px-4 py-1.5 rounded-2xl">
+                    <p class="font-extrabold">100</p>
+                    <img src="./assets/coin.png" alt="" class="w-[23.25px] h-[23.25px]">
+                </div>
+                <div class="flex bg-[#00A63E] px-4 py-1.5 rounded-2xl">
+                    <p class="font-semibold text-white">0 <span>Copy</span></p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="flex justify-center flex-col items-center gap-2 bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] p-5 mt-5">
+            <img src="./assets/logo-dark.png" alt="" class="w-[92px] h-[92px]">
+            <h1 class="text-white font-bold text-2xl">Emergency Service Directory</h1>
+            <h3 class="text-white text-sm tracking-wide">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</h2>
+        </div>
 
     </header>
 
     <main>
-        
+
     </main>
 </body>
 </html>
