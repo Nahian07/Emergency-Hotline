@@ -27,7 +27,7 @@
                     <img src="./assets/coin.png" alt="" class="w-[23.25px] h-[23.25px]">
                 </div>
                 <div class="flex bg-[#00A63E] px-4 py-1.5 rounded-2xl">
-                    <p class="font-semibold text-white">2 <span>Copy</span></p>
+                    <p class="font-semibold text-white"><span id="copy">0</span> Copy</p>
                 </div>
             </div>
         </nav>
@@ -51,11 +51,11 @@
                 </div>
                 <h2 class="font-bold mt-2 text-lg">National Emergency Number</h2>
                 <h5 class="font-light text-sm">National Emergency</h5>
-                <p class="font-bold mt-2 text-lg">999</p>
+                <p class="phone-number font-bold mt-2 text-lg">999</p>
                 <span class="text-xs font-light p-1.5 rounded-lg bg-gray-200">All</span>
                 <br>
                 <br>
-                <button class="cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="nationalEmergencyCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
             <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 ml-[-50px] drop-shadow-sm">
@@ -65,11 +65,11 @@
                 </div>                
                 <h2 class="font-bold mt-2 text-lg">Police Helpline Number</h2>
                 <h5 class="font-light text-sm">Police</h5>
-                <p class="font-bold mt-2 text-lg">999</p>
+                <p class="phone-number font-bold mt-2 text-lg">999</p>
                 <span class="text-xs font-light p-1.5 rounded-lg bg-gray-200">Police</span>
                 <br>
                 <br>
-                <button class="cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="policeHelplineCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
             <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 ml-[-120px] drop-shadow-sm">
@@ -79,11 +79,11 @@
                 </div>
                 <h2 class="font-bold mt-2 text-lg">Fire Service Number</h2>
                 <h5 class="font-light text-sm">Fire Service</h5>
-                <p class="font-bold mt-2 text-lg">999</p>
+                <p class="phone-number font-bold mt-2 text-lg">999</p>
                 <span class="text-xs font-light p-1.5 rounded-lg bg-gray-200">Fire</span>
                 <br>
                 <br>
-                <button class="cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="fireServiceCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
             <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 drop-shadow-sm">
@@ -93,11 +93,11 @@
                 </div>
                 <h2 class="font-bold mt-2 text-lg">Ambulance Service</h2>
                 <h5 class="font-light text-sm">Ambulance</h5>
-                <p class="font-bold mt-2 text-lg">1994-999999</p>
+                <p class="phone-number font-bold mt-2 text-lg">1994-999999</p>
                 <span class="text-xs font-light p-1.5 rounded-lg bg-gray-200">Health</span>
                 <br>
                 <br>
-                <button class="cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="ambulanceServiceCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
             <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 ml-[-50px] drop-shadow-sm">
@@ -107,11 +107,11 @@
                 </div>
                 <h2 class="font-bold mt-2 text-lg">Women & Child Helpline</h2>
                 <h5 class="font-light text-sm">Women & Child Helpline</h5>
-                <p class="font-bold mt-2 text-lg">109</p>
+                <p class="phone-number font-bold mt-2 text-lg">109</p>
                 <span class="text-xs font-light p-1.5 rounded-lg bg-gray-200">Help</span>
                 <br>
                 <br>
-                <button class="cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="woman&childHelpCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
             <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 ml-[-120px] drop-shadow-sm">
@@ -121,11 +121,11 @@
                 </div>
                 <h2 class="font-bold mt-2 text-lg">Anti-Corruption Helpline</h2>
                 <h5 class="font-light text-sm">Anti-Corruption</h5>
-                <p class="font-bold mt-2 text-lg">106</p>
+                <p class="phone-number font-bold mt-2 text-lg">106</p>
                 <span class="text-xs font-light p-1.5 rounded-lg bg-gray-200">Govt.</span>
                 <br>
                 <br>
-                <button class="cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="anti-CorruptionCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
             <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 drop-shadow-sm">
@@ -135,11 +135,11 @@
                 </div>
                 <h2 class="font-bold mt-2 text-lg">Electricity Helpline</h2>
                 <h5 class="font-light text-sm">Electricity Outage</h5>
-                <p class="font-bold mt-2 text-lg">16216</p>
+                <p class="phone-number font-bold mt-2 text-lg">16216</p>
                 <span class="text-xs font-light p-1.5 rounded-lg bg-gray-200">Electricity</span>
                 <br>
                 <br>
-                <button class="cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="electricityHelpCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
             <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 ml-[-50px] drop-shadow-sm">
@@ -149,11 +149,11 @@
                 </div>
                 <h2 class="font-bold mt-2 text-lg">Brac Helpline</h2>
                 <h5 class="font-light text-sm">Brac</h5>
-                <p class="font-bold mt-2 text-lg">16445</p>
+                <p class="phone-number font-bold mt-2 text-lg">16445</p>
                 <span class="text-xs font-light p-1.5 rounded-lg bg-gray-200">NGO</span>
                 <br>
                 <br>
-                <button class="cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="bracHelpCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
             <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 ml-[-120px] drop-shadow-sm">
@@ -163,11 +163,11 @@
                 </div>
                 <h2 class="font-bold mt-2 text-lg">Bangladesh Railway Helpline</h2>
                 <h5 class="font-light text-sm">Bangladesh Railway</h5>
-                <p class="font-bold mt-2 text-lg">163</p>
+                <p class="phone-number font-bold mt-2 text-lg">163</p>
                 <span class="text-xs font-light p-1.5 rounded-lg bg-gray-200">Travel</span>
                 <br>
                 <br>
-                <button class="cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
+                <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="bangladeshRailwayHelpCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
         </div>

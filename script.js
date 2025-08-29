@@ -9,14 +9,12 @@ for(let heart of hearts)
 {
     heart.addEventListener("click", function(){
         const heartCount = parseInt(document.getElementById("heart-cnt").innerText);
-        console.log(heartCount);
         const newHeart = heartCount + 1;
-        console.log(newHeart);
         document.getElementById("heart-cnt").innerText = newHeart;
     })
 }
 
-// Call History Function
+
 
 
 
@@ -43,7 +41,7 @@ document.getElementById("nationalEmergencyCallButton").addEventListener("click",
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
 
-
+    // Call History Function
     const data = {
         name:"National Emergency Number",
         number:999,
@@ -456,3 +454,22 @@ document.getElementById("clearHistoryButton").addEventListener("click", function
 
     document.getElementById("callHistoryContainer").innerHTML = "";
 })
+
+// Copy Button
+const copy = document.getElementsByClassName("copy-btn");
+for(let button of copy)
+{
+    button.addEventListener("click", function(e){
+        e.preventDefault();
+
+        const number = this.parentElement.querySelector(".phone-number").innerText;
+
+        navigator.clipboard.writeText(number);
+
+        alert(`📋 Number Copied: ${number}`);
+
+        const copy = parseInt(document.getElementById("copy").innerText);
+        const newCopyCnt = copy + 1;
+        document.getElementById("copy").innerText = newCopyCnt;
+    })
+}
