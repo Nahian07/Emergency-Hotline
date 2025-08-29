@@ -12,8 +12,9 @@
 </head>
 <body>
     <header>
-        <nav class="flex justify-between max-w-[1600px] m-auto mt-5 items-center">
-            <div class="flex">
+        <nav class="flex flex-col sm:flex-row flex-wrap justify-center sm:justify-between items-center 
+            max-w-[1600px] m-auto mt-5 gap-3 sm:gap-0 px-4">
+            <div class="flex items-center justify-center sm:justify-start">
                 <img src="./assets/logo.png" alt="" class="w-[50px] h-[50px] mr-2">
                 <h2 class="font-extrabold leading-tight text-[#006747] text-lg">Emergency <br> Service</h2>
             </div>
@@ -27,12 +28,14 @@
                     <img src="./assets/coin.png" alt="" class="w-[23.25px] h-[23.25px]">
                 </div>
                 <div class="flex bg-[#00A63E] px-4 py-1.5 rounded-2xl">
-                    <p class="font-semibold text-white"><span id="copy">0</span> Copy</p>
+                    <p class="font-semibold text-white"><span id="copy">2</span> Copy</p>
                 </div>
             </div>
         </nav>
 
-        <div class="flex justify-center flex-col items-center gap-2 bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] p-5 mt-5">
+        <div class="flex flex-col items-center text-center gap-3 
+            bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] 
+            p-4 sm:p-6 lg:p-8 mt-5">
             <img src="./assets/logo-dark.png" alt="" class="w-[92px] h-[92px]">
             <h1 class="text-white font-bold text-2xl">Emergency Service Directory</h1>
             <h3 class="text-white text-sm tracking-wide">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</h2>
@@ -40,11 +43,11 @@
 
     </header>
 
-    <main class="bg-[#f5fff6] h-full p-10">
-    <div class="flex m-auto max-w-[1600px]">
+    <main class="bg-[#f5fff6] p-12">
+    <div class="flex flex-col lg:flex-row m-auto max-w-[1600px] gap-5">
         <div class="w-full m-auto">
-        <div class="grid grid-cols-3 gap-5">
-            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-1">
+            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm mx-auto">
                 <div class="flex gap-48 items-center">
                     <img src="./assets/emergency.png" alt="" class="p-2 bg-[#FFE3E2] w-[32px] h-[32px] rounded-xl">
                     <i class="heart fa-regular fa-heart cursor-pointer"></i>
@@ -56,9 +59,9 @@
                 <br>
                 <br>
                 <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button id="nationalEmergencyCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
+                <button id="nationalEmergencyCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light "><i class="fa-solid fa-phone"></i> Call</button>
             </div>
-            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 ml-[-50px] drop-shadow-sm">
+            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm mx-auto">
                 <div class="flex gap-48 items-center">
                     <img src="./assets/police.png" alt="" class="p-2 bg-[#DFEFFF] w-[32px] h-[32px] rounded-xl">
                     <i class="heart fa-regular fa-heart cursor-pointer"></i>
@@ -72,7 +75,7 @@
                 <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="policeHelplineCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
-            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 ml-[-120px] drop-shadow-sm">
+            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm mx-auto">
                 <div class="flex gap-48 items-center">
                     <img src="./assets/fire-service.png" alt="" class="p-2 bg-[#FFE3E2] w-[32px] h-[32px] rounded-xl">
                     <i class="heart fa-regular fa-heart cursor-pointer"></i>
@@ -86,7 +89,7 @@
                 <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="fireServiceCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
-            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 drop-shadow-sm">
+            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm mx-auto">
                 <div class="flex gap-48 items-center">
                     <img src="./assets/ambulance.png" alt="" class="p-2 bg-[#FFE3E2] w-[32px] h-[32px] rounded-xl">
                     <i class="heart fa-regular fa-heart cursor-pointer"></i>
@@ -100,7 +103,7 @@
                 <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="ambulanceServiceCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
-            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 ml-[-50px] drop-shadow-sm">
+            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm mx-auto">
                 <div class="flex gap-48 items-center">
                     <img src="./assets/emergency.png" alt="" class="p-2 bg-[#FFE3E2] w-[32px] h-[32px] rounded-xl">
                     <i class="heart fa-regular fa-heart cursor-pointer"></i>
@@ -114,7 +117,7 @@
                 <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="woman&childHelpCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
-            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 ml-[-120px] drop-shadow-sm">
+            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm mx-auto">
                 <div class="flex gap-48 items-center">
                     <img src="./assets/emergency.png" alt="" class="p-2 bg-[#FFE3E2] w-[32px] h-[32px] rounded-xl">
                     <i class="heart fa-regular fa-heart cursor-pointer"></i>
@@ -128,7 +131,7 @@
                 <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="anti-CorruptionCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
-            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 drop-shadow-sm">
+            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm mx-auto">
                 <div class="flex gap-48 items-center">
                     <img src="./assets/emergency.png" alt="" class="p-2 bg-[#FFE3E2] w-[32px] h-[32px] rounded-xl">
                     <i class="heart fa-regular fa-heart cursor-pointer"></i>
@@ -142,7 +145,7 @@
                 <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="electricityHelpCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
-            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 ml-[-50px] drop-shadow-sm">
+            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm mx-auto">
                 <div class="flex gap-48 items-center">
                     <img src="./assets/emergency.png" alt="" class="p-2 bg-[#FFE3E2] w-[32px] h-[32px] rounded-xl">
                     <i class="heart fa-regular fa-heart cursor-pointer"></i>
@@ -156,7 +159,7 @@
                 <button class="copy-btn cursor-pointer text-xs px-10 py-1.5 rounded-lg bg-[#FFFFFF] border-1 border-gray-200 font-light mr-2"><i class="fa-regular fa-copy"></i> Copy</button>
                 <button id="bracHelpCallButton" class="cursor-pointer text-xs px-10 py-1.5 bg-[#00A63E] text-white rounded-lg font-light"><i class="fa-solid fa-phone"></i> Call</button>
             </div>
-            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-5 ml-[-120px] drop-shadow-sm">
+            <div class="p-5 bg-white max-w-[300px] rounded-2xl mt-12 drop-shadow-sm mx-auto">
                 <div class="flex gap-48 items-center">
                     <img src="./assets/emergency.png" alt="" class="p-2 bg-[#FFE3E2] w-[32px] h-[32px] rounded-xl">
                     <i class="heart fa-regular fa-heart cursor-pointer"></i>
@@ -172,7 +175,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-white rounded-2xl p-5 min-w-[400px] mt-10 drop-shadow-sm">
+    <div class="bg-white rounded-2xl p-5 w-full sm:max-w-[400px] mt-10 drop-shadow-sm">
         <div class="flex justify-between">
             <div>
                 <h2 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h2>

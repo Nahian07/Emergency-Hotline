@@ -1,7 +1,6 @@
 // Call History Array
 const callData = [];
 
-
 // Hearts
 
 const hearts = document.getElementsByClassName("heart");
@@ -13,17 +12,6 @@ for(let heart of hearts)
         document.getElementById("heart-cnt").innerText = newHeart;
     })
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // Call Buttons
 
@@ -88,7 +76,7 @@ document.getElementById("policeHelplineCallButton").addEventListener("click", fu
 
 
 
-
+    // Call History Function
     const data = {
         name:"Police Helpline Number",
         number:999,
@@ -135,7 +123,7 @@ document.getElementById("fireServiceCallButton").addEventListener("click", funct
     document.getElementById("coin").innerText = newAvailableCoin;
 
 
-
+    // Call History Function
     const data = {
         name:"Fire Service Number",
         number:999,
@@ -182,7 +170,7 @@ document.getElementById("ambulanceServiceCallButton").addEventListener("click", 
 
 
 
-
+    // Call History Function
     const data = {
         name:"Ambulance Service",
         number:'1994-999999',
@@ -228,7 +216,7 @@ document.getElementById("woman&childHelpCallButton").addEventListener("click", f
     document.getElementById("coin").innerText = newAvailableCoin;
 
 
-
+    // Call History Function
     const data = {
         name:"Women & Child Helpline",
         number:109,
@@ -274,7 +262,7 @@ document.getElementById("anti-CorruptionCallButton").addEventListener("click", f
     document.getElementById("coin").innerText = newAvailableCoin;
 
 
-
+    // Call History Function
     const data = {
         name:"Anti-Corruption Helpline",
         number:106,
@@ -321,7 +309,7 @@ document.getElementById("electricityHelpCallButton").addEventListener("click", f
 
 
 
-
+    // Call History Function
     const data = {
         name:"Electricity Helpline",
         number:16216,
@@ -368,7 +356,7 @@ document.getElementById("bracHelpCallButton").addEventListener("click", function
 
 
 
-
+    // Call History Function
     const data = {
         name:"Brac Helpline",
         number:16445,
@@ -415,8 +403,7 @@ document.getElementById("bangladeshRailwayHelpCallButton").addEventListener("cli
 
 
 
-
-
+    // Call History Function
     const data = {
         name:"Bangladesh Railway Helpline ",
         number:163,
