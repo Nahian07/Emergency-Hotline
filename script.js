@@ -449,3 +449,10 @@ document.getElementById("bangladeshRailwayHelpCallButton").addEventListener("cli
 }
 })
 
+// Clear Button
+document.getElementById("clearHistoryButton").addEventListener("click", function(e){
+    e.preventDefault();
+    callData.length = 0;
+
+    document.getElementById("callHistoryContainer").innerHTML = "";
+})
