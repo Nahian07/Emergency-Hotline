@@ -27,3 +27,5 @@ Ans : 1. preventDefault() : Stops the default action of an element from happenin
    
       2. stopPropagation() : Stops the event from bubbling (or capturing) further in the DOM.
                              It does not prevent the default action.
+
+         visit site : https://nahian07.github.io/Emergency-Hotline/
