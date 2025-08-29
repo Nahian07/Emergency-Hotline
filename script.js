@@ -1,3 +1,7 @@
+// Call History Array
+const callData = [];
+
+
 // Hearts
 
 const hearts = document.getElementsByClassName("heart");
@@ -11,6 +15,13 @@ for(let heart of hearts)
         document.getElementById("heart-cnt").innerText = newHeart;
     })
 }
+
+// Call History Function
+
+
+
+
+
 
 
 
@@ -32,6 +43,35 @@ document.getElementById("nationalEmergencyCallButton").addEventListener("click",
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
 
+
+    const data = {
+        name:"National Emergency Number",
+        number:999,
+        time:new Date().toLocaleTimeString()
+    }
+
+    callData.push(data);
+
+
+    const callHistoryContainer = document.getElementById("callHistoryContainer");
+    callHistoryContainer.innerText = "";
+    for(const data of callData)
+    {
+        const div = document.createElement("div")
+        div.innerHTML = `
+        <div class="flex justify-between items-center p-5 bg-slate-100 rounded-2xl mt-3">
+            <div>
+                <h3 class="font-bold">${data.name}</h3>
+                <p>${data.number}</p>
+            </div>
+            <div>
+                <p>${data.time}</p>
+            </div>
+        </div>
+    `
+
+    callHistoryContainer.appendChild(div);
+}
 })
 
 // Police Helpline
@@ -47,6 +87,38 @@ document.getElementById("policeHelplineCallButton").addEventListener("click", fu
     alert("📞 Calling Police Helpline Number 999...");
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
+
+
+
+
+    const data = {
+        name:"Police Helpline Number",
+        number:999,
+        time:new Date().toLocaleTimeString()
+    }
+
+    callData.push(data);
+
+
+    const callHistoryContainer = document.getElementById("callHistoryContainer");
+    callHistoryContainer.innerText = "";
+    for(const data of callData)
+    {
+        const div = document.createElement("div")
+        div.innerHTML = `
+        <div class="flex justify-between items-center p-5 bg-slate-100 rounded-2xl mt-3">
+            <div>
+                <h3 class="font-bold">${data.name}</h3>
+                <p>${data.number}</p>
+            </div>
+            <div>
+                <p>${data.time}</p>
+            </div>
+        </div>
+    `
+
+    callHistoryContainer.appendChild(div);
+}
 })
 
 // Fire Service
@@ -63,6 +135,37 @@ document.getElementById("fireServiceCallButton").addEventListener("click", funct
     alert("📞 Calling Fire Service Number 999...");
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
+
+
+
+    const data = {
+        name:"Fire Service Number",
+        number:999,
+        time:new Date().toLocaleTimeString()
+    }
+
+    callData.push(data);
+
+
+    const callHistoryContainer = document.getElementById("callHistoryContainer");
+    callHistoryContainer.innerText = "";
+    for(const data of callData)
+    {
+        const div = document.createElement("div")
+        div.innerHTML = `
+        <div class="flex justify-between items-center p-5 bg-slate-100 rounded-2xl mt-3">
+            <div>
+                <h3 class="font-bold">${data.name}</h3>
+                <p>${data.number}</p>
+            </div>
+            <div>
+                <p>${data.time}</p>
+            </div>
+        </div>
+    `
+
+    callHistoryContainer.appendChild(div);
+}
 })
 
 // Ambulance Service
@@ -78,6 +181,38 @@ document.getElementById("ambulanceServiceCallButton").addEventListener("click", 
     alert("📞 Calling Ambulance Service 1994-999999...");
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
+
+
+
+
+    const data = {
+        name:"Ambulance Service",
+        number:'1994-999999',
+        time:new Date().toLocaleTimeString()
+    }
+
+    callData.push(data);
+
+
+    const callHistoryContainer = document.getElementById("callHistoryContainer");
+    callHistoryContainer.innerText = "";
+    for(const data of callData)
+    {
+        const div = document.createElement("div")
+        div.innerHTML = `
+        <div class="flex justify-between items-center p-5 bg-slate-100 rounded-2xl mt-3">
+            <div>
+                <h3 class="font-bold">${data.name}</h3>
+                <p>${data.number}</p>
+            </div>
+            <div>
+                <p>${data.time}</p>
+            </div>
+        </div>
+    `
+
+    callHistoryContainer.appendChild(div);
+}
 })
 
 // Women & Child Helpline
@@ -93,6 +228,37 @@ document.getElementById("woman&childHelpCallButton").addEventListener("click", f
     alert("📞 Calling Women & Child Helpline 109...");
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
+
+
+
+    const data = {
+        name:"Women & Child Helpline",
+        number:109,
+        time:new Date().toLocaleTimeString()
+    }
+
+    callData.push(data);
+
+
+    const callHistoryContainer = document.getElementById("callHistoryContainer");
+    callHistoryContainer.innerText = "";
+    for(const data of callData)
+    {
+        const div = document.createElement("div")
+        div.innerHTML = `
+        <div class="flex justify-between items-center p-5 bg-slate-100 rounded-2xl mt-3">
+            <div>
+                <h3 class="font-bold">${data.name}</h3>
+                <p>${data.number}</p>
+            </div>
+            <div>
+                <p>${data.time}</p>
+            </div>
+        </div>
+    `
+
+    callHistoryContainer.appendChild(div);
+}
 })
 
 // Anti-Corruption Helpline
@@ -108,6 +274,37 @@ document.getElementById("anti-CorruptionCallButton").addEventListener("click", f
     alert("📞 Calling Anti-Corruption Helpline 106...");
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
+
+
+
+    const data = {
+        name:"Anti-Corruption Helpline",
+        number:106,
+        time:new Date().toLocaleTimeString()
+    }
+
+    callData.push(data);
+
+
+    const callHistoryContainer = document.getElementById("callHistoryContainer");
+    callHistoryContainer.innerText = "";
+    for(const data of callData)
+    {
+        const div = document.createElement("div")
+        div.innerHTML = `
+        <div class="flex justify-between items-center p-5 bg-slate-100 rounded-2xl mt-3">
+            <div>
+                <h3 class="font-bold">${data.name}</h3>
+                <p>${data.number}</p>
+            </div>
+            <div>
+                <p>${data.time}</p>
+            </div>
+        </div>
+    `
+
+    callHistoryContainer.appendChild(div);
+}
 })
 
 // Electricity Helpline
@@ -123,6 +320,38 @@ document.getElementById("electricityHelpCallButton").addEventListener("click", f
     alert("📞 Calling Electricity Helpline 16216...");
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
+
+
+
+
+    const data = {
+        name:"Electricity Helpline",
+        number:16216,
+        time:new Date().toLocaleTimeString()
+    }
+
+    callData.push(data);
+
+
+    const callHistoryContainer = document.getElementById("callHistoryContainer");
+    callHistoryContainer.innerText = "";
+    for(const data of callData)
+    {
+        const div = document.createElement("div")
+        div.innerHTML = `
+        <div class="flex justify-between items-center p-5 bg-slate-100 rounded-2xl mt-3">
+            <div>
+                <h3 class="font-bold">${data.name}</h3>
+                <p>${data.number}</p>
+            </div>
+            <div>
+                <p>${data.time}</p>
+            </div>
+        </div>
+    `
+
+    callHistoryContainer.appendChild(div);
+}
 })
 
 // Brac Helpline
@@ -138,6 +367,38 @@ document.getElementById("bracHelpCallButton").addEventListener("click", function
     alert("📞 Calling Brac Helpline 16445...");
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
+
+
+
+
+    const data = {
+        name:"Brac Helpline",
+        number:16445,
+        time:new Date().toLocaleTimeString()
+    }
+
+    callData.push(data);
+
+
+    const callHistoryContainer = document.getElementById("callHistoryContainer");
+    callHistoryContainer.innerText = "";
+    for(const data of callData)
+    {
+        const div = document.createElement("div")
+        div.innerHTML = `
+        <div class="flex justify-between items-center p-5 bg-slate-100 rounded-2xl mt-3">
+            <div>
+                <h3 class="font-bold">${data.name}</h3>
+                <p>${data.number}</p>
+            </div>
+            <div>
+                <p>${data.time}</p>
+            </div>
+        </div>
+    `
+
+    callHistoryContainer.appendChild(div);
+}
 })
 
 // Bangladesh Railway Helpline
@@ -153,4 +414,38 @@ document.getElementById("bangladeshRailwayHelpCallButton").addEventListener("cli
     alert("📞 Calling Bangladesh Railway Helpline 163...");
     const newAvailableCoin = availableCoin - 20;
     document.getElementById("coin").innerText = newAvailableCoin;
+
+
+
+
+
+    const data = {
+        name:"Bangladesh Railway Helpline ",
+        number:163,
+        time:new Date().toLocaleTimeString()
+    }
+
+    callData.push(data);
+
+
+    const callHistoryContainer = document.getElementById("callHistoryContainer");
+    callHistoryContainer.innerText = "";
+    for(const data of callData)
+    {
+        const div = document.createElement("div")
+        div.innerHTML = `
+        <div class="flex justify-between items-center p-5 bg-slate-100 rounded-2xl mt-3">
+            <div>
+                <h3 class="font-bold">${data.name}</h3>
+                <p>${data.number}</p>
+            </div>
+            <div>
+                <p>${data.time}</p>
+            </div>
+        </div>
+    `
+
+    callHistoryContainer.appendChild(div);
+}
 })
+
